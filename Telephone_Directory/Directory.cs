@@ -343,7 +343,7 @@ namespace Telephone_Directory
             return Users_Directory.Find(us => us.idUser == id);
         }
 
-        private bool CheckEmail(string email)
+        public bool CheckEmail(string email)
         {
             try
             {
@@ -361,7 +361,7 @@ namespace Telephone_Directory
                 return false;
             }
         }
-        private bool CheckPhone(string phone)
+        public bool CheckPhone(string phone)
         {
             string pattern = @"^(8|7)\([0-9]{3}\)\d{3}-\d{2}-\d{2}";
             try
@@ -379,7 +379,7 @@ namespace Telephone_Directory
             }
         }
 
-        private bool CheckCase(string initial)
+        public bool CheckCase(string initial)
         {
             try
             {

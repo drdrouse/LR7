@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Diagnostics;
 using Telephone_Directory;
 
@@ -11,6 +12,7 @@ namespace UnitTestProject1
     {
         public List<Users> Users_Directory = new List<Users>();
         int id_delete, id_change=0;
+        string surname, name, secondname, phone, email, column;
         Random _rnd = new Random();
         Directory directory = new Directory();
         public TestContext TestContext { get; set; }
@@ -25,6 +27,12 @@ namespace UnitTestProject1
 
             id_delete = _rnd.Next(0, 10);
             id_change = _rnd.Next(0, 10);
+            phone = "7(000)987-00-00";
+            email = "test@test.com";
+            surname = "Проверкин";
+            name = "Проверка";
+            secondname = "Проверкович";
+            column = "Фамилия";
 
             //id_delete = Convert.ToInt32(TestContext.DataRow["id_delete"]);
             //id_change  = Convert.ToInt32(TestContext.DataRow["id_change"]);
@@ -41,6 +49,41 @@ namespace UnitTestProject1
                     Debug.WriteLine("NOTHING");
             }
         }
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestMethod_Phone()
+        {
+            Assert.IsTrue(directory.CheckPhone(phone));            
+        }
+
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestMethod_Enail()
+        {
+            Assert.IsTrue(directory.CheckEmail(email));
+        }
+
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestMethod_Surname()
+        {
+            Assert.IsTrue(directory.CheckCase(surname));
+        }
+
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestMethod_Name()
+        {
+            Assert.IsTrue(directory.CheckCase(name));
+        }
+
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestMethod_Secondname()
+        {
+            Assert.IsTrue(directory.CheckCase(secondname));
+        }
+
 
         //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
         [TestMethod]
@@ -64,7 +107,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod_Add()
         {
-            Assert.IsTrue(directory.Add("Иванов", "Иван", "Иванович", "7(000)000-00-00", "test@mail.com", Users_Directory));
+            Assert.IsTrue(directory.Add(surname, name, secondname, phone, email, Users_Directory));
             
             Debug.WriteLine("\n");
             for (int i = 0; i < Users_Directory.Count; i++)
@@ -78,10 +121,11 @@ namespace UnitTestProject1
             }
         }
 
+        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "Param", DataAccessMethod.Sequential)]
         [TestMethod]
         public void TestMethod_Change()
         {
-            Assert.IsTrue(directory.Change(Users_Directory, "Фамилия", "Иванов", id_change));
+            Assert.IsTrue(directory.Change(Users_Directory, column, secondname, id_change));
             Debug.WriteLine("\n");
             for (int i = 0; i < Users_Directory.Count; i++)
             {
