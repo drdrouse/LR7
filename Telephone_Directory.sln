@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephone_Directory", "Telephone_Directory\Telephone_Directory.csproj", "{5B8C2D43-6555-41F8-A6BF-41CB893064BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{EFFD614C-1D39-4808-9230-11428A33F23C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B8C2D43-6555-41F8-A6BF-41CB893064BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8C2D43-6555-41F8-A6BF-41CB893064BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8C2D43-6555-41F8-A6BF-41CB893064BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8C2D43-6555-41F8-A6BF-41CB893064BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFFD614C-1D39-4808-9230-11428A33F23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFD614C-1D39-4808-9230-11428A33F23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFD614C-1D39-4808-9230-11428A33F23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFD614C-1D39-4808-9230-11428A33F23C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FCA9C34-B73F-48E9-BD97-53D1BC5D3B58}
+	EndGlobalSection
+EndGlobal

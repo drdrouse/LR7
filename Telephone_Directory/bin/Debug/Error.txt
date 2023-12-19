@@ -1,0 +1,1 @@
+Ошибка: Неверно введён id пользователя	19.12.2023 14:32:30	UTC:19.12.2023 4:32:30	Telephone_Directory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null	Строка:285	Столбец:25	Метод:Int32 Select(System.Collections.Generic.List`1[System.Int32], Int32)||

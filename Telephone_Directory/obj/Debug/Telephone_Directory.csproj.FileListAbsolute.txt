@@ -1,0 +1,7 @@
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\bin\Debug\Telephone_Directory.pdb
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\obj\Debug\Telephone_Directory.csproj.AssemblyReference.cache
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\obj\Debug\Telephone_Directory.csproj.CoreCompileInputs.cache
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\obj\Debug\Telephone_Directory.pdb
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\bin\Debug\Telephone_Directory.dll.config
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\bin\Debug\Telephone_Directory.dll
+D:\Учёба\Предметы\Тестирование и отладка программного обеспечения\Для репозитория\Telephone_Directory\Telephone_Directory\obj\Debug\Telephone_Directory.dll
